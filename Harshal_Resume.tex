@@ -1,0 +1,274 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+% https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+% \begin{center}
+%     \textbf{\Huge \scshape Manish Kumar} \\ \vspace{1pt}
+%     \small ********** $|$ \href{mailto:mverma6250@gmail.com}{{mverma6250@gmail.com}} $|$ 
+%     \href{https://www.linkedin.com/in/manish-kumar-373b86176/}{\bf LinkedIn} $|$
+%     \href{https://github.com/manisnitt}{\bf GitHub} $|$
+%     \href{https://www.youtube.com/channel/UCacvJAgrPTjSEdnZObMzpqQ}{\bf YouTube}
+% \end{center}
+
+
+
+\begin{center}
+    \textbf{\Huge \scshape Harshal Bhoyar} \\ \vspace{1pt}
+    \small +91-7888205983 $|$ \href{mailto:mverma6250@gmail.com}{{harshalbhoyar14@gmail.com}}    \\ 
+    \small  
+    \href{https://www.linkedin.com/in/harshal-bhoyar-1971ba182/}{\bf LinkedIn} $|$
+    \href{https://github.com/harshalbhoyar?tab=repositories}{\bf GitHub} 
+    
+\end{center}
+% \href{https://www.youtube.com/channel/UCacvJAgrPTjSEdnZObMzpqQ}{\bf YouTube}
+
+
+
+%-----------PROJECTS-----------
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item 
+DevOps Engineer with 3 years of experience in automating, configuring, and deploying applications in cloud environments. Skilled in AWS, CI/CD pipelines, infrastructure as code, and container orchestration. Proficient in tools like \textbf{Git}, \textbf{Jenkins}, \textbf{Docker}, \textbf{Ansible}, \textbf{Kubernetes}, and \textbf{Terraform}.
+
+
+\end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Cloud Platforms}{:\hspace{1.92cm}  AWS} \\
+     \textbf{Version Control}{:\hspace{2.05cm}   Git, GitHub } \\
+     \textbf{CI/CD Tools}{:\hspace{2.55cm} Jenkins} \\
+     \textbf{Containerization}{:\hspace{1.95cm} Docker } \\
+     \textbf{Orchestration}{:\hspace{2.45cm} Kubernetes}\\
+     \textbf{Configuration Management}{:\hspace{0.02cm} Ansible} \\
+     \textbf{Infrastructure as Code}{:\hspace{0.80cm} Terraform} \\
+     \textbf{Scripting \& OS}{:\hspace{2.15cm} Bash, Linux} \\
+     
+    }}
+ \end{itemize}
+
+% \section{Technical Skills}
+% \begin{itemize}[left=0.15in, label={}]
+%     \item \textbf{Programming Languages:} Python, SQL, Scala
+%     \item \textbf{Big Data Technologies:} Spark, PySpark, Spark SQL, YARN, Kubernetes, Hadoop, Hive, Impala
+%     \item \textbf{Data Engineering Tools:} Azure Devops, Data Modelling, ETL/ELT data Pipeline
+%     \item \textbf{Orchestration:} Airflow, Kubernetes, CA Autosys
+%     \item \textbf{Familiar:} FastAPI, Elasticsearch, ADF, ADLS, Azure Blob, Amazon S3, Databricks
+%     \item \textbf{Developer Tools:} Git, VS Code, Visual Studio, PyCharm, IntelliJ
+% \end{itemize}
+
+%-------------------------------------------
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+   
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+% -------------------------------------------
+
+    \resumeSubheading
+      {Cognizant Technology Solutions Pvt. Ltd.}{Feb 2023 - Present}
+      {Technical Lead}{Pune, India}
+      \resumeItemListStart
+      \resumeItem{Implemented CI/CD pipelines using Jenkins, reducing deployment time by 40\%. }
+      \resumeItem{Automated infrastructure provisioning on AWS using Terraform and Ansible. }
+        % \item Developed an automated invoicing system, enabling dynamic pricing adjustments on cloud service provider invoices.
+        \resumeItem {Managed and deployed containerized applications using Docker and Kubernetes.}
+        \resumeItem {Monitored system performance and troubleshooting issues across distributed environments.}
+       \resumeItem {Integrated GitHub with Jenkins for automated testing and deployment workflows.}  
+       \resumeItem {Collaborated with development teams for smoother and faster deployment cycles.}
+    \resumeItemListEnd
+    
+
+     \resumeSubheading
+      {Cognizant Technology Solutions Pvt. Ltd.}{Feb 2022 - Feb 2023}
+      {Senior Systems Executive}{Pune, India}
+      \resumeItemListStart
+        \resumeItem {Performed patch management for Windows (via WSUS and Intune), Adobe, Microsoft Office, and iOS devices using Intune and Workspace ONE.}
+        \resumeItem{Created and maintained detailed SOPs and conducted knowledge transfer (KT) sessions to support onboarding and process standardization.}
+         \resumeItem {Generated and analyzed compliance reports through Intune to monitor and ensure high patching success rates.}
+        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Capgemini Technology Services India Limited}{Sept 2021 - Jan 2022}
+      {Software Engineer-Analyst A4}{Pune, India}
+      \resumeItemListStart
+        \resumeItem {Managed MobileIron MDM platform to provision user access, deploy device profiles, and enforce mobile device compliance policies across the organization.}
+\resumeItem {Executed remote unlock commands to resolve password-locked device issues and performed troubleshooting for Microsoft Teams and Outlook mobile application problems.}
+\resumeItem {
+
+Sent targeted push notifications via MobileIron to users for critical iOS updates, improving device security posture and end-user communication.
+
+% Optimized overall process performance through \textbf{Spark performance tuning}, managing a vast dataset of \textbf{15Terabyte(TB)}.
+}
+      \resumeItemListEnd
+
+
+
+    % \resumeSubHeadingListStart
+    %   \resumeProjectHeading
+    %       {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+    %         \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+    %         \resumeItem{Visualized GitHub data to show collaboration}
+    %         \resumeItem{Used Celery and Redis for asynchronous tasks}
+    %       \resumeItemListEnd
+    %   \resumeProjectHeading
+    %       {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+    %         \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+    %         \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+    %         \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+    %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+    \item {\small$\bullet$ \hspace{0.5em} \href{https://www.credly.com/badges/1d8aa7bc-aa55-4e80-88a4-a9d45014cc88/linked_in_profile}{\textbf{AWS Solutions Architect Associate}}}
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Priyadarshini College Of Engineering} & Nagpur, Maharashtra \\
+      \textit{Bachelor of Engineering in Computer Science} & \textit{July 2016 - June 2020} \\
+      \textit{CGPA: 8.90} & \\
+    \end{tabular*}\vspace{-7pt}
+  \resumeSubHeadingListEnd
+%-------------------------------
+
+
+%
+
+\end{document}
